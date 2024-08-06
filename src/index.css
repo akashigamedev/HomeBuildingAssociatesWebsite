@@ -1,46 +1,76 @@
-/*
-  1. Use a more-intuitive box-sizing model.
-*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  /* font variables */
+  --ff-primary: 'Nunito Sans', sans-serif;
+  --ff-secondary: 'Noto Sans', sans-serif;
+
+  /* color variables */
+  --clr-primary: #050315;
+  --clr-secondary: #1A1C36;
+  --clr-accent-blue: #3B5AFD;
+  --clr-accent-yellow: #EBC238;
+  --clr-text-800: #FBFBFE;
+  --clr-text-400: #DEDCFF;
+
+  /* margin variables */
+  --m-xxl: 6rem;
+  --m-xl: 5rem;
+  --m-lg: 3rem;
+  --m-md: 2rem;
+  --m-sm: 1rem;
+  --m-xs: 0.5rem;
+
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
   }
-  /*
-    2. Remove default margin
-  */
   * {
     margin: 0;
   }
-  /*
-    Typographic tweaks!
-    3. Add accessible line-height
-    4. Improve text rendering
-  */
   body {
-    line-height: 1.5;
+    line-height: 1.6;
     -webkit-font-smoothing: antialiased;
   }
-  /*
-    5. Improve media defaults
-  */
+
   img, picture, video, canvas, svg {
     display: block;
     max-width: 100%;
   }
-  /*
-    6. Remove built-in form typography styles
-  */
   input, button, textarea, select {
     font: inherit;
   }
-  /*
-    7. Avoid text overflows
-  */
   p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
   }
-  /*
-    8. Create a root stacking context
-  */
   #root, #__next {
     isolation: isolate;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--ff-primary);
+  }
+  h1 {
+    font-size: 4rem;
+    font-weight: 900;
+  }
+  h2 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff-secondary);
+    font-size: 1rem;
+    background-color: var(--clr-primary);
+    color: var(--clr-text-800);
   }
