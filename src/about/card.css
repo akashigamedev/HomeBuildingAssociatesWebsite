@@ -1,0 +1,25 @@
+.container {
+border-radius: 10px;
+background-color: var(--clr-secondary);
+width: 33%;
+height: 250px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0 30px;
+}
+.container img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;   
+    
+    margin-top: 2px;
+    margin-left: 90px;
+}
+.container h4 {
+    margin-top: var(--m-sm);
+    margin-bottom: var(--m-sm);
+    text-transform: capitalize;
+    margin-left: 30px;
+}
